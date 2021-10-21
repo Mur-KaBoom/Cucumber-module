@@ -1,0 +1,35 @@
+{
+  "name": "cucumber-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor ./test/config/protractor.config.js",
+    "postinstall": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mur-KaBoom/Cucumber-module.git"
+  },
+  "keywords": [
+    "BDD",
+    "Cucumber",
+    "ATM"
+  ],
+  "author": "Palina Kazlova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mur-KaBoom/Cucumber-module/issues"
+  },
+  "homepage": "https://github.com/Mur-KaBoom/Cucumber-module#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "cucumber": "^7.0.0-rc.0",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^8.2.6",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1"
+  }
+}
