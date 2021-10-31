@@ -8,6 +8,8 @@ exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     capabilities: {
+        shardTestFiles: yargs.instances > 1,
+        maxInstances: yargs.instances || 1,
         browserName: 'chrome',
         chromeOptions: {
             args: ['--no-sandbox', '--window-size']
@@ -16,9 +18,9 @@ exports.config = {
     disableChecks: true,
     directConnect: true,
     cucumberOpts: {
-        require: [path.resolve('../step_definitions/*.js')],
-        // ignoreUncaughtExceptions: true,
-        // format: [`json: ${path.resolve('./test/reports/report.json')}`],
+        require: ["../step_definitions/*.js"],
+        ignoreUncaughtExceptions: true,
+        format: [`json:../reports/report.json`, `../../node_modules/cucumber-pretty`],
         tags: yargs.tags || '@smoke'
     }
 }

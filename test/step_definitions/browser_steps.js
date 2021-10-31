@@ -1,29 +1,28 @@
-const { When, Then, setDefaultTimeout } = require('cucumber');
-const { expect } = require('chai');
+const { When, setDefaultTimeout } = require('cucumber');
+const { browser} = require('protractor');
 setDefaultTimeout(60000);
 
-When(/^I open stupid McDonalds web page$/, function () {
-    return browser.get('https://www.mcdonalds.com/us/en-us.html');
+When(/^I open stupid McDonalds web page$/, async function () {
+    await  browser.get('https://www.mcdonalds.com/us/en-us.html');
 });
 
-Then(/^Page title should be "([^"]*)"$/, function (pageTitle) {
-    expect(await browser.getTitle()).to.be.equal(pageTitle);
+When (/^I scroll to bottom$/, async function () {
+    await browser.executeScript('window.scrollTo(0, document.body.scrollHeight)');
 });
 
-// When (/^I scroll to "([^"]*)"$/, function (elementToScrollTo) {
+When (/^I switch to the next tab$/, async function () {
+    const handles = await browser.getAllWindowHandles();
+    await browser.switchTo().window(handles[1]);
+});
 
-// });
+When (/^I switch to the original tab$/, async function () {
+    const handles = await browser.getAllWindowHandles();
+    await browser.executeScript('window.close();');
+    await browser.driver.switchTo().window(handles[0]);
+    browser.ignoreSynchronization = false;
+});
 
-// When (/^I click "([^"]*)"$/, function (elementToClick) {
-
-// });
-
-// When (/^I wait until "([^"]*)" is displayed$/, function (elementToBeDusplayed) {
-
-// });
-
-// When (/^And I switch to the next tab$/, function () {
-
-// });
-
+When (/^I disable protractor sync$/, async function () {
+    browser.ignoreSynchronization = true;
+});
         
