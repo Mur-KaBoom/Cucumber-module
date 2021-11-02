@@ -1,0 +1,1030 @@
+[
+  {
+    "description": "    Verification of title and social media links",
+    "keyword": "Feature",
+    "name": "Home Page",
+    "line": 2,
+    "id": "home-page",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "..\\features\\Home-Page.feature",
+    "elements": [
+      {
+        "id": "home-page;page-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Page Title",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Page title should be \"McDonald's: Burgers, Fries & More. Quality Ingredients.\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;user-is-able-to-open-social-media-sites-via-footer-icons-0",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "User is able to open social media sites via footer icons 0",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@socialMedia",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1534000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I scroll to bottom",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait until \"socialMediaLinks\" in footer is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click \"#0 of socialMediaLinks\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait until \"confirmRedirectionPopup\" is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click \"confirmButton\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 931000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I switch to the next tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I disable protractor sync",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page url should be \"https://www.facebook.com/McDonalds/\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3420000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the original tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;user-is-able-to-open-social-media-sites-via-footer-icons-1",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "User is able to open social media sites via footer icons 1",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@socialMedia",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I scroll to bottom",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait until \"socialMediaLinks\" in footer is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click \"#1 of socialMediaLinks\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait until \"confirmRedirectionPopup\" is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click \"confirmButton\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I switch to the next tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I disable protractor sync",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page url should be \"https://twitter.com/mcdonalds\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1088000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the original tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 339000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;user-is-able-to-open-social-media-sites-via-footer-icons-2",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "User is able to open social media sites via footer icons 2",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@socialMedia",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 976000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I scroll to bottom",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait until \"socialMediaLinks\" in footer is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click \"#2 of socialMediaLinks\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait until \"confirmRedirectionPopup\" is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click \"confirmButton\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I switch to the next tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I disable protractor sync",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page url should be \"https://www.youtube.com/channel/UCRI5ZedBs0_BYY4PlxD6m7w\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the original tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;user-is-able-to-open-social-media-sites-via-footer-icons-3",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "User is able to open social media sites via footer icons 3",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@socialMedia",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 983000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I scroll to bottom",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait until \"socialMediaLinks\" in footer is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click \"#3 of socialMediaLinks\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait until \"confirmRedirectionPopup\" is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click \"confirmButton\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I switch to the next tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I disable protractor sync",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page url should be \"https://www.instagram.com/mcdonalds/\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3402000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the original tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;user-is-able-to-open-social-media-sites-via-footer-icons-4",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "User is able to open social media sites via footer icons 4",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@socialMedia",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 948000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I scroll to bottom",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait until \"socialMediaLinks\" in footer is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click \"#4 of socialMediaLinks\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait until \"confirmRedirectionPopup\" is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click \"confirmButton\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I switch to the next tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I disable protractor sync",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page url should be \"https://mcdonalds.tumblr.com/\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the original tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;user-is-able-to-open-social-media-sites-via-footer-icons-5",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "User is able to open social media sites via footer icons 5",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@socialMedia",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open stupid McDonalds web page",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1096000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I scroll to bottom",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait until \"socialMediaLinks\" in footer is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click \"#5 of socialMediaLinks\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait until \"confirmRedirectionPopup\" is displayed",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click \"confirmButton\"",
+            "match": {
+              "location": "..\\step_definitions\\action_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I switch to the next tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I disable protractor sync",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page url should be \"https://open.spotify.com/user/mcdonalds\"",
+            "match": {
+              "location": "..\\step_definitions\\verification_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the original tab",
+            "match": {
+              "location": "..\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
