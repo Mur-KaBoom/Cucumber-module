@@ -11,10 +11,10 @@ Feature: Home Page
     Scenario Outline: User is able to open social media sites via footer icons <num>
         Given I open stupid McDonalds web page
         When I scroll to bottom
-        And I wait until "Social Media Links" in footer is displayed
-        And I click "#<num> of Social Media Links"
-        And I wait until "Confirm Redirection Popup" is displayed
-        And I click "Confirm Button"
+        And I wait until "socialMediaLinks" in footer is displayed
+        And I click "#<num> of socialMediaLinks"
+        And I wait until "confirmRedirectionPopup" is displayed
+        And I click "confirmButton"
         And I switch to the next tab
         And I disable protractor sync
         Then Page url should be "<pageUrl>"

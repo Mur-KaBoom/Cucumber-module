@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "node ./test/utils/delete_reports.js",
     "test": "protractor ./test/config/protractor.config.js",
     "postinstall": "webdriver-manager update"
   },
@@ -26,6 +27,7 @@
     "chai": "^4.3.4",
     "cucumber": "^6.0.5",
     "cucumber-pretty": "^6.0.0",
+    "fs-extra": "^10.0.0",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^8.2.6",
     "yargs": "^17.2.1"
